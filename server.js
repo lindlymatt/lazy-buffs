@@ -9,7 +9,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static('public'));
-//app.use('/jquery', express.static('node_modules/jquery/dist'));
+app.use('/jquery', express.static('node_modules/jquery/dist'));
+app.use('/bootstrap', express.static('node_modules/bootstrap/dist'));
+app.use('/angular', express.static('node_modules/angular'));
+app.use('/angular-ui-router', express.static('node_modules/angular-ui-router/release'));
 
 app.use((req, res, next) => {
   res.sendStatus(404);
