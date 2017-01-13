@@ -15,6 +15,9 @@ app.use('/angular', express.static('node_modules/angular'));
 app.use('/angular-ui-router', express.static('node_modules/angular-ui-router/release'));
 app.use('/font-awesome', express.static('node_modules/font-awesome'));
 
+const applications = require('./routes/applications');
+app.use('/applications', applications);
+
 app.use((req, res, next) => {
   res.sendStatus(404);
 });
