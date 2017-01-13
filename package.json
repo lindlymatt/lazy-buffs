@@ -1,0 +1,29 @@
+{
+  "name": "lazy-buffs",
+  "version": "1.0.0",
+  "description": "The landing page for the Lazy Buffs business. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindlymatt/lazy-buffs.git"
+  },
+  "author": "tristanmattaidan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lindlymatt/lazy-buffs/issues"
+  },
+  "homepage": "https://github.com/lindlymatt/lazy-buffs#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "knex": "^0.12.6",
+    "pg": "^6.1.2"
+  }
+}
