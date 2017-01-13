@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('redditApp').config(config);
+  angular.module('app').config(config);
 
   config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
@@ -11,7 +11,7 @@
     $stateProvider
       .state({
         name: 'home',
-        url: '/'
+        url: '/',
         component: ''
       });
   }
