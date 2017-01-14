@@ -19,6 +19,8 @@ router.post('/drivers', (req, res, next) => {
     driver.number = number;
   }
 
+  console.log(driver);
+
   if (noUndefinedAttributes && driver.hasOwnProperty('number')) {
     knex('drivers')
       .insert(driver, ['name', 'address', 'number', 'email'])
