@@ -198,7 +198,7 @@
             <p>5% Comission per Delivery</p>
             <p>Guaranteed 25min Delivery Period</p>
             <p style="margin-bottom: 40px;">Also Available: Premium Advertising Plans</p>
-            <a href="/#" id="partnerButton" class="btn btn-xl">Partner with Us</a>
+            <a href="#/" id="partnerButton" class="btn btn-xl">Partner with Us</a>
           </div>
           <div id="partnerForm" style="display: none; min-height: 400px; padding: 25px; border: 1px black solid; border-radius: 5px;">
             <form action="/applications/partners">
@@ -214,11 +214,27 @@
             <p>Flexible Hours</p>
             <p>Make Up to $20/Hr</p>
             <p style="margin-bottom: 40px;">Delivery Vehicle Provided</p>
-            <a href="/#" id="driverButton" class="btn btn-xl">See the Application</a>
+            <a href="#/" id="driverButton" class="btn btn-xl">See the Application</a>
           </div>
           <div id="driverForm" style="display: none; min-height: 400px; padding: 25px; border: 1px black solid; border-radius: 5px;">
-            <form action="/applications/drivers">
-
+            <form method="POST" action="/applications/drivers">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="addess">Address</label>
+                <input type="text" class="form-control" name="address" placeholder="Enter address">
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input type="number" class="form-control" name="number" placeholder="Enter phone number">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter email">
+              </div>
+              <button href="#/" type="submit" class="btn btn-xl">Submit</button>
             </form>
           </div>
         </div>
