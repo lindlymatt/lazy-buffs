@@ -199,8 +199,28 @@
             <a href="#/" id="partnerButton" class="btn btn-xl">Partner with Us</a>
           </div>
           <div id="partnerForm" style="display: none; min-height: 400px; padding: 25px; border: 1px black solid; border-radius: 5px;">
-            <form action="/applications/partners">
-
+            <form method="POST" action="/applications/partners">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter full name" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Company Name</label>
+                <input type="text" class="form-control" name="company" placeholder="Enter company name" required>
+              </div>
+              <div class="form-group">
+                <label for="addess">Business Address</label>
+                <input type="text" class="form-control" name="address" placeholder="Enter business address" required>
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input type="number" class="form-control" name="number" placeholder="Enter phone number" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+              </div>
+              <button href="#/" type="submit" class="btn btn-xl">Submit</button>
             </form>
           </div>
         </div>
@@ -218,19 +238,19 @@
             <form method="POST" action="/applications/drivers">
               <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" class="form-control" name="name" placeholder="Enter name">
+                <input type="text" class="form-control" name="name" placeholder="Enter full name" required>
               </div>
               <div class="form-group">
                 <label for="addess">Address</label>
-                <input type="text" class="form-control" name="address" placeholder="Enter address">
+                <input type="text" class="form-control" name="address" placeholder="Enter address" required>
               </div>
               <div class="form-group">
                 <label for="number">Phone Number</label>
-                <input type="number" class="form-control" name="number" placeholder="Enter phone number">
+                <input type="number" class="form-control" name="number" placeholder="Enter phone number" required>
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" name="email" placeholder="Enter email">
+                <input type="email" class="form-control" name="email" placeholder="Enter email" required>
               </div>
               <button href="#/" type="submit" class="btn btn-xl">Submit</button>
             </form>

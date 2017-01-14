@@ -19,8 +19,6 @@ router.post('/drivers', (req, res, next) => {
     driver.number = number;
   }
 
-  console.log(driver);
-
   if (noUndefinedAttributes && driver.hasOwnProperty('number')) {
     knex('drivers')
       .insert(driver, ['name', 'address', 'number', 'email'])
@@ -38,6 +36,7 @@ router.post('/drivers', (req, res, next) => {
 router.post('/partners', (req, res, next) => {
   const partner = {
     name: req.body.name,
+    company: req.body.company,
     address: req.body.address,
     email: req.body.email
   };
@@ -52,7 +51,7 @@ router.post('/partners', (req, res, next) => {
 
   if (noUndefinedAttributes && partner.hasOwnProperty('number')) {
     knex('partners')
-      .insert(partner, ['name', 'address', 'number', 'email'])
+      .insert(partner, ['name', 'company', 'address', 'number', 'email'])
       .then((partner) => {
         res.json(partner[0]);
       })
