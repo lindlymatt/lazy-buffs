@@ -1,0 +1,11 @@
+.circle-sponsor {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px black solid;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
