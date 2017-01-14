@@ -75,7 +75,6 @@ $(document).ready(() => {
           .css('background-color', '#d9534f')
           .css('border', '1px solid #d9534f')
           .html('<i class="fa fa-times" aria-hidden="true"></i> Try Again');
-        console.log('ran');
         $('#partnerFormMsg').show();
       });
   });
