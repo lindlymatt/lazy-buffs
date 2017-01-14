@@ -26,10 +26,17 @@ $(document).ready(() => {
       email
     })
       .done(() => {
-        console.log('good');
+        form.find('input').val('');
+        $('#driverSubmitButton')
+          .css('background-color', '#5cb85c')
+          .css('border', '1px solid #5cb85c')
+          .html('<i class="fa fa-check" aria-hidden="true"></i> Submitted');
       })
       .fail(() => {
-        console.log('badd');
+        $('#driverSubmitButton')
+          .css('background-color', '#d9534f')
+          .css('border', '1px solid #d9534f')
+          .html('<i class="fa fa-times" aria-hidden="true"></i> Try Again');
       });
   });
 
@@ -50,10 +57,17 @@ $(document).ready(() => {
       email
     })
       .done(() => {
-        console.log('good');
+        form.find('input').val('');
+        $('#partnerSubmitButton')
+          .css('background-color', '#5cb85c')
+          .css('border', '1px solid #5cb85c')
+          .html('<i class="fa fa-check" aria-hidden="true"></i> Submitted');
       })
       .fail(() => {
-        console.log('badd');
+        $('#partnerSubmitButton')
+          .css('background-color', '#d9534f')
+          .css('border', '1px solid #d9534f')
+          .html('<i class="fa fa-times" aria-hidden="true"></i> Try Again');
       });
   });
 });
