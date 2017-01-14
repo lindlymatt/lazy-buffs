@@ -26,4 +26,26 @@ router.post('/drivers', (req, res, next) => {
   }
 });
 
+router.post('/partners', (req, res, next) => {
+  const partner = {
+    name: req.body.name,
+    address: req.body.address,
+    contact: req.body.contact
+  };
+
+  // makes sure nothing is undefined
+  const noUndefinedAttribute = Object.keys(partner).every(attribute => typeof attribute.trim() === 'string');
+
+  if (noUndefinedAttribute) {
+    knex('partners')
+      .insert(partner, ['name', 'address', 'contact'])
+      .then((partner) => {
+        res.json(partner[0]);
+      })
+      .catch((err) => {
+        res.sendStatus(500);
+      });
+  }
+});
+
 module.exports = router;
