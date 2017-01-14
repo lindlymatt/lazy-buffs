@@ -27,7 +27,13 @@ img {
   max-height: 100%;
 }
 
-.sponsor-link {
-  text-decoration: none;
-  font-size: 2em;
+.sponsor {
+  color: black;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.sponsor:hover {
+  cursor: pointer;
+  text-decoration: none !important;
 }
