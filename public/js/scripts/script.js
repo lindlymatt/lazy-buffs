@@ -31,12 +31,16 @@ $(document).ready(() => {
           .css('background-color', '#5cb85c')
           .css('border', '1px solid #5cb85c')
           .html('<i class="fa fa-check" aria-hidden="true"></i> Submitted');
+        $('#driverFormMsg')
+          .html('We will contact you within 24 hours.<br><br>')
+          .show();
       })
       .fail(() => {
         $('#driverSubmitButton')
           .css('background-color', '#d9534f')
           .css('border', '1px solid #d9534f')
           .html('<i class="fa fa-times" aria-hidden="true"></i> Try Again');
+        $('#driverFormMsg').show();
       });
   });
 
@@ -62,12 +66,17 @@ $(document).ready(() => {
           .css('background-color', '#5cb85c')
           .css('border', '1px solid #5cb85c')
           .html('<i class="fa fa-check" aria-hidden="true"></i> Submitted');
+        $('#partnerFormMsg')
+            .html('We will contact you within 24 hours.<br><br>')
+            .show();
       })
       .fail(() => {
         $('#partnerSubmitButton')
           .css('background-color', '#d9534f')
           .css('border', '1px solid #d9534f')
           .html('<i class="fa fa-times" aria-hidden="true"></i> Try Again');
+        console.log('ran');
+        $('#partnerFormMsg').show();
       });
   });
 });

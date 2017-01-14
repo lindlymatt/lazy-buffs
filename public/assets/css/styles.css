@@ -37,3 +37,8 @@ img {
   cursor: pointer;
   text-decoration: none !important;
 }
+
+.slogan {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: #f5f5f5;
+}
