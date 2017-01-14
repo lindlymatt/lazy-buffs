@@ -5,7 +5,8 @@ exports.up = function(knex, Promise) {
     table.increments('id');
     table.string('name').notNullable();
     table.string('address').notNullable();
-    table.string('contact').notNullable();
+    table.string('email').notNullable();
+    table.integer('number').notNullable();
     table.timestamps(true, true);
   });
 };
