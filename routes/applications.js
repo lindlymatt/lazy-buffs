@@ -24,6 +24,7 @@ router.post('/drivers', (req, res, next) => {
       .insert(driver, ['name', 'address', 'number', 'email'])
       .then((driver) => {
         res.json(driver[0]);
+        //res.redirect('/');
       })
       .catch((err) => {
         res.sendStatus(500);
