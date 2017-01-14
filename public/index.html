@@ -73,7 +73,7 @@
           <h3 class="section-subheading text-muted">Click any of the partners' images for their current menus.</h3>
         </div>
       </div>
-      <div class="sponsors-row row text-center">
+      <div style="margin-bottom: 10px;" class="sponsors-row row text-center align-text-top">
         <div class="col-md-3 col-xsm-6">
           <!-- <img class="circle-sponsor" src="assets/img/gurkhas.png" /> -->
           <h1>Gurkhas on the Hill</h3>
@@ -97,11 +97,11 @@
           </span>
         </div>
       </div>
-      <div class="sponsors-row row text-center">
+      <div style="margin-bottom: 10px;" class="sponsors-row row text-center">
         <div class="col-md-3 col-xsm-6">
           <span class="sponsors-image">
             <!-- <img class="circle-sponsor" src="assets/img/subway.jpg" /> -->
-            <h1>Subway</h3>
+            <h1>Brooklyn Pizza</h3>
           </span>
         </div>
         <div class="col-md-3 col-xsm-6">
@@ -123,6 +123,58 @@
           </span>
         </div>
       </div>
+      <div style="margin-bottom: 10px;" class="sponsors-row row text-center">
+        <div class="col-md-3 col-xsm-6">
+          <span class="sponsors-image">
+            <!-- <img class="circle-sponsor" src="assets/img/subway.jpg" /> -->
+            <h1>Kalita Grill</h3>
+          </span>
+        </div>
+        <div class="col-md-3 col-xsm-6">
+          <span class="sponsors-image">
+            <!-- <img class="circle-sponsor" src="assets/img/sushi_hana.png" /> -->
+            <h1>Khow Thai</h3>
+          </span>
+        </div>
+        <div class="col-md-3 col-xsm-6">
+          <span class="sponsors-image">
+            <!-- <img class="circle-sponsor" src="assets/img/the_taj.jpg" /> -->
+            <h1>Mamis</h3>
+          </span>
+        </div>
+        <div class="col-md-3 col-xsm-6">
+          <span class="sponsors-image">
+            <!-- <img class="circle-sponsor" src="assets/img/boulder_salad.jpg" /> -->
+            <h1>The Corner</h3>
+          </span>
+        </div>
+      </div>
+      <div class="sponsors-row row text-center">
+        <div class="col-md-12 col-xsm-12">
+          <span class="sponsors-image">
+            <!-- <img class="circle-sponsor" src="assets/img/subway.jpg" /> -->
+            <h1>Tiffins</h3>
+          </span>
+        </div>
+        <!-- <div class="col-md-3 col-xsm-6">
+          <span class="sponsors-image">
+            <img class="circle-sponsor" src="assets/img/sushi_hana.png" />
+            <h1>Sushi Hana</h3>
+          </span>
+        </div>
+        <div class="col-md-3 col-xsm-6">
+          <span class="sponsors-image">
+            <img class="circle-sponsor" src="assets/img/the_taj.jpg" />
+            <h1>The Taj</h3>
+          </span>
+        </div>
+        <div class="col-md-3 col-xsm-6">
+          <span class="sponsors-image">
+            <img class="circle-sponsor" src="assets/img/boulder_salad.jpg" />
+            <h1>Boulder Salad</h3>
+          </span>
+        </div>
+      </div> -->
     </div>
   </section>
 
@@ -138,27 +190,37 @@
       <div class="row">
         <div style="padding: 25px;" class="col-lg-6 col-md-6 text-center">
           <h2 style="font-size: 2em" class="section-heading">Becoming a Partner</h2>
-          <div style="min-height: 400px; padding: 25px; border: 1px black solid; border-radius: 5px;">
-          <h3 style="margin-bottom: 40px;" class="section-subheading text-muted">Becoming a partner of Lazy Buff is a great investment!</h3>
-          <p>$3.50 Delivery Fee</p>
-          <p>5% Comission per Delivery</p>
-          <p>Guaranteed 25min Delivery Period</p>
-          <p style="margin-bottom: 40px;">Also Available: Premium Advertising Plans</p>
-          <a href="/#" id="partnerButton" class="page-scroll btn btn-xl">Partner with Us</a>
+          <div id="partnerInfo" style="min-height: 400px; padding: 25px; border: 1px black solid; border-radius: 5px;">
+            <h3 style="margin-bottom: 40px;" class="section-subheading text-muted">Becoming a partner of Lazy Buff is a great investment!</h3>
+            <p>$3.50 Delivery Fee</p>
+            <p>5% Comission per Delivery</p>
+            <p>Guaranteed 25min Delivery Period</p>
+            <p style="margin-bottom: 40px;">Also Available: Premium Advertising Plans</p>
+            <a href="/#" id="partnerButton" class="btn btn-xl">Partner with Us</a>
+          </div>
+          <div id="partnerForm" style="display: none; min-height: 400px; padding: 25px; border: 1px black solid; border-radius: 5px;">
+            <form action="/applications/partners">
+
+            </form>
+          </div>
+        </div>
+        <div style="padding: 25px;" class="col-lg-6 col-md-6 text-center">
+          <h2 style="font-size: 2em" class="section-heading">Apply to be a Driver</h2>
+          <div id="driverInfo" style="min-height: 400px; padding: 25px; border: 1px black solid; border-radius: 5px;">
+            <h3 style="margin-bottom: 40px;" class="section-subheading text-muted">Work for the fastest delivery service in Boulder, Colorado!</h3>
+            <p>Driver's Needed</p>
+            <p>Flexible Hours</p>
+            <p>Make Up to $20/Hr</p>
+            <p style="margin-bottom: 40px;">Delivery Vehicle Provided</p>
+            <a href="/#" id="driverButton" class="btn btn-xl">See the Application</a>
+          </div>
+          <div id="driverForm" style="display: none; min-height: 400px; padding: 25px; border: 1px black solid; border-radius: 5px;">
+            <form action="/applications/drivers">
+
+            </form>
+          </div>
         </div>
       </div>
-      <div style="padding: 25px;" class="col-lg-6 col-md-6 text-center">
-        <h2 style="font-size: 2em" class="section-heading">Apply to be a Driver</h2>
-        <div style="min-height: 400px; padding: 25px; border: 1px black solid; border-radius: 5px;">
-          <h3 style="margin-bottom: 40px;" class="section-subheading text-muted">Work for the fastest delivery service in Boulder, Colorado!</h3>
-          <p>Driver's Needed</p>
-          <p>Flexible Hours</p>
-          <p>Make Up to $20/Hr</p>
-          <p style="margin-bottom: 40px;">Delivery Vehicle Provided</p>
-          <a href="/#" id="driverButton" class="page-scroll btn btn-xl">See the Application</a>
-        </div>
-      </div>
-    </div>
     </div>
   </section>
 
